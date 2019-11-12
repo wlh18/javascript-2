@@ -26,16 +26,17 @@
 <li>Students can use a for loop to repeat a block of code until the condition fails</li>
 <li>Students can use for loops to iterate over an array</li>
 </ul>
+</details>
 
 <details>
 <summary>Objects</summary>
 <ul>
 <li>Students can access values in an object using dot notation</li>
-<li>Sudents can access values in an object using bracket notation</li>
+<li>Students can access values in an object using bracket notation</li>
 <li>Students can add a key/value pair to an object using dot notation</li>
 <li>Students can add a key/value pair to an object using bracket notation</li>
 <li>Students can create a method</li>
-<li>Stuents can invoke a method</li>
+<li>Students can invoke a method</li>
 <li>Students can create objects by writing a function that returns an object</li>
 </ul>
 
@@ -76,7 +77,7 @@
 
 ---
 
-In this lecture we start to dive into some more functionality of JavaScript. We will learn how to access and edit specific values nested within arrays and objects. We will also learn about methods, or functions nested within objects. Finally, we'll talk about callbacks, or functions that are passed as arguments to other functions. All of these are useful for storing and retreiving data in an organized way, a skill that will be essential to being a successful developer.
+In this lecture we start to dive into some more functionality of JavaScript. We will learn how to access and edit specific values nested within arrays and objects. We will also learn about methods, or functions nested within objects. Finally, we'll talk about callbacks, or functions that are passed as arguments to other functions. All of these are useful for storing and retrieving data in an organized way, a skill that will be essential to being a successful developer.
 
 > Note: The topics covered in this lesson will act as the foundation for most of the more advanced subjects we will cover. Please make sure you are comfortable with all of these ideas and make sure to ask for help if you're not sure about something.
 
@@ -140,7 +141,7 @@ All of these functions are invoked by chaining them onto an array variable in th
   var finalName = namesArr.pop()
 
   //namesArr now looks like this: ['Andrew', 'Jonathan']
-  //.pop can be assiged to a variable which will be the item removed.
+  //.pop can be assigned to a variable which will be the item removed.
   //In this example finalName is now equal to 'Josh'
   ```
 
@@ -151,7 +152,7 @@ All of these functions are invoked by chaining them onto an array variable in th
   var firstName = namesArr.shift()
 
   //namesArr now looks like this: ['Jonathan', 'Josh']
-  //Similar to .pop, .shift can be assiged to a variable.
+  //Similar to .pop, .shift can be assigned to a variable.
   //firstName will be equal to 'Andrew'
   ```
 
@@ -161,7 +162,7 @@ All of these functions are invoked by chaining them onto an array variable in th
   namesArr.push('Brandon')
   //namesArr now looks like this: ['Brandon', 'Andrew', 'Jonathan', 'Josh']
   ```
-- `.slice()` makes a shallow copy of the array that it's chained on to. It takes two arguments, the starting and ending indecies of the array you want to copy.
+- `.slice()` makes a shallow copy of the array that it's chained on to. It takes two arguments, the starting and ending indices of the array you want to copy.
   ```js
   var namesArr = ['Andrew', 'Jonathan', 'Josh']
   var someNames = namesArr.slice(0, 1)
@@ -249,7 +250,7 @@ for (let i = 0; i < numsArr.length; i++) {
 
 > In this way we are able to loop over an array and dynamically access `numsArr` at index `i`, executing a block of code on each item in the array.
 >
-> NOTE: While for loops are useful for looping over arrays, they are not intrinsically tied together. The important thing to remember, is that a for loop exectues a given code block until the provided condition evaluates to false.
+> NOTE: While for loops are useful for looping over arrays, they are not intrinsically tied together. The important thing to remember, is that a for loop executes a given code block until the provided condition evaluates to false.
 
 ### Objects
 
@@ -340,12 +341,13 @@ New key/value pairs can be added to existing objects using either dot or bracket
 
   person.friends.push('Charles')
   //This will push the value 'Charles' onto the friends array on the person object.
-  //It is incredibly common to see data nested in this fasion, so you should become comfortable with seeing it
+  //It is incredibly common to see data nested in this fashion, so you should become comfortable with seeing it
   ```
 
 - Using bracket notation:
+
   ```js
-  //This code will behave identially to the code above
+  //This code will behave identically to the code above
   var person = {
     name: 'Andrew',
     age: 27,
@@ -371,8 +373,11 @@ New key/value pairs can be added to existing objects using either dot or bracket
   person[myKey].push('Charles')
   //This will push the value 'Charles' onto the friends array on the person object.
   ```
+
   #### Methods
+
   Methods are functions that live on objects. We can create a method using a number of different syntax but the one that will look most familiar is using the `function` keyword. For example:
+
   ```js
   const person = {
     name: 'Andrew',
@@ -386,9 +391,10 @@ New key/value pairs can be added to existing objects using either dot or bracket
     },
   }
   ```
-  > In this example, we have attatched two methods to our person object: `sayHi` and `listFriends`. We invoke methods by referencing their key using either dot or bracket notation, and using parentheses `()` to indicate we want to invoke the function. In this case, we could invoke `sayHi` by typeing `person.sayHi()` which would print 'Hello, Andrew' to the console.
+
+  > In this example, we have attached two methods to our person object: `sayHi` and `listFriends`. We invoke methods by referencing their key using either dot or bracket notation, and using parentheses `()` to indicate we want to invoke the function. In this case, we could invoke `sayHi` by typing `person.sayHi()` which would print 'Hello, Andrew' to the console.
   >
-  > All JavaScript data types have methods attatched to them. It will be worth your time to study what some of them are. We have already learned some examples today: `.push()`, `.pop()`, etc. are all methods!
+  > All JavaScript data types have methods attached to them. It will be worth your time to study what some of them are. We have already learned some examples today: `.push()`, `.pop()`, etc. are all methods!
 
 #### Using functions to create objects
 
@@ -418,7 +424,7 @@ var andrew = makePeople('Andrew', 27, ['Jonathan', 'Josh', 'Brandon'])
 var jonathan = makePeople('Jonathan', 27, ['Andrew', 'Steve'])
 //This will give us an object customized to me.
 //This works because our return value of the function is the new person object
-//When we use a function to create a new object, it has access to all of the properies and methods on that object.
+//When we use a function to create a new object, it has access to all of the properties and methods on that object.
 
 andrew.sayHi()
 //This will print 'Hello Andrew' to the console
@@ -466,7 +472,7 @@ var people = [
 //Take a minute and acquaint yourself with how this array is put together.
 ```
 
-> Note: For now, don't worry about the `this` in the `sayHi` function. We will dive into what that means later. For now, just understand that it is telling the function to reference the name property on the same object it is attatched to.
+> Note: For now, don't worry about the `this` in the `sayHi` function. We will dive into what that means later. For now, just understand that it is telling the function to reference the name property on the same object it is attached to.
 
 Accessing specific properties inside of an array of objects works exactly how you would expect it to:
 
@@ -514,7 +520,7 @@ people[1].sayHi()
 
 ---
 
-The ternary operator can be used as an alternative to if...else statements to make our code more concice. We format a ternary in the following way:
+The ternary operator can be used as an alternative to if...else statements to make our code more concise. We format a ternary in the following way:
 
 `condition ? what to do if true : what to do if false`
 
@@ -547,7 +553,7 @@ var num2 = 5
 var statement
 
 num1 > num2
-  ? (statement = 'First numbe is more')
+  ? (statement = 'First number is more')
   : (statement = 'Second number is more')
 
 console.log(statement)
@@ -619,7 +625,7 @@ consoleLogResult(() => return greeting('Andrew'))
 >
 > 1.  Our `greeting` function takes a name and returns a greeting specific for that person
 > 2.  Our `consoleLogResult` function takes a callback and prints its result to the console
-> 3.  Because we need to pass an argument to our callback function (`greeting`), we need to invoke it as part of the arguemnt passed to `consoleLogResult`. Here we are using the arrow function syntax to do so.
+> 3.  Because we need to pass an argument to our callback function (`greeting`), we need to invoke it as part of the argument passed to `consoleLogResult`. Here we are using the arrow function syntax to do so.
 >
 > Functions such as `consoleLogResult` whose purpose is to execute their callback functions and do something with their value are known as _higher order functions_. You will learn shortly about many built in higher order functions so it's good to know what that means.
 
@@ -633,9 +639,9 @@ consoleLogResult(() => return greeting('Andrew'))
 
 - [Understand JavaScript Callback Functions and Use Them](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/) - A more detailed breakdown of callback functions and how they work. A great resource if you want to review that further.
 - [Array - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - More detailed information on the array data type and the methods built in to it. We will go over many of these in the next few days but it's a good idea to start to acquaint yourself with them.
-- [Object - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) - More detailed informatin on the object data type.
+- [Object - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) - More detailed information on the object data type.
 - [Understand The JavaScript Ternary Operator like the ABCs ― Scotch.io](https://scotch.io/tutorials/understand-the-javascript-ternary-operator-like-abc) - More information on ternaries and how they work.
-- [Codewars](https://www.codewars.com/dashboard) - Great resource to practice problem solving and aquaint yourself with basic JavaScript concepts.
+- [Codewars](https://www.codewars.com/dashboard) - Great resource to practice problem solving and acquaint yourself with basic JavaScript concepts.
 - [Repl.it](https://repl.it/~) - Code sandbox to practice JavaScript or any other language.
 
 #### Videos
