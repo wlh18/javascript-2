@@ -1,6 +1,17 @@
-# Javascript 2
+## Lecture Code
+https://repl.it/@matias_perez/JavaScript-2-Lecture-Code
 
-## Learning objectives
+# Lesson Sections
+
+## Slideshow: https://slides.com/matias_perez/javascript-two/
+
+1. [JavaScript 2 Lecture Notes](#JavaScript-2-Lecture-Notes)
+1. [Additional Resources](#additional-resources)
+1. [JavaScript 2 Mini Project](#JavaScript-2-Mini-Project)
+1. [JavaScript 2 Afternoon Project](#JavaScript-2-Afternoon-Project)
+
+
+## Student Learning Objectives
 
 <details>
 <summary>Arrays</summary>
@@ -629,14 +640,12 @@ consoleLogResult(() => return greeting('Andrew'))
 >
 > Functions such as `consoleLogResult` whose purpose is to execute their callback functions and do something with their value are known as _higher order functions_. You will learn shortly about many built in higher order functions so it's good to know what that means.
 
-### Additional Resources
+# Additional Resources
 
----
+## General
 
-#### General
 
----
-
+- [javascript.info](https://javascript.info) - Matias' hands down, personal favorite resource for learning all things JavaScript, from 0 to hero. 
 - [Understand JavaScript Callback Functions and Use Them](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/) - A more detailed breakdown of callback functions and how they work. A great resource if you want to review that further.
 - [Array - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) - More detailed information on the array data type and the methods built in to it. We will go over many of these in the next few days but it's a good idea to start to acquaint yourself with them.
 - [Object - JavaScript \| MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) - More detailed information on the object data type.
@@ -644,9 +653,16 @@ consoleLogResult(() => return greeting('Andrew'))
 - [Codewars](https://www.codewars.com/dashboard) - Great resource to practice problem solving and acquaint yourself with basic JavaScript concepts.
 - [Repl.it](https://repl.it/~) - Code sandbox to practice JavaScript or any other language.
 
-#### Videos
-
----
+## Videos
 
 - [1.2 JavaScript II on Vimeo](https://vimeo.com/246522547/c7891ae0b0)
+- [Traversy Media Javascript Intro](https://www.youtube.com/watch?v=hdI2bqOjy3c&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=2&t=0s)
   > Although this video is long, watching it will greatly deepen your understanding of the discussed topics and prepare you for the more advanced topics we will be covering very soon.
+
+
+# JavaScript 2 Mini Project
+Embedded in Unit 1.4 at https://lms.devmountain.com/courses/70
+
+# JavaScript 2 Afternoon Project
+https://github.com/DevMountain/javascript-2-afternoon
+
