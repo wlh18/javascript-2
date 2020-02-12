@@ -3,7 +3,7 @@ https://repl.it/@matias_perez/JavaScript-2-Lecture-Code
 
 # Lesson Sections
 
-## Slideshow: https://slides.com/matias_perez/javascript-two/
+## Slideshow: https://slides.com/mattbodily/javascript-two
 
 1. [JavaScript 2 Lecture Notes](#JavaScript-2-Lecture-Notes)
 1. [Additional Resources](#additional-resources)
