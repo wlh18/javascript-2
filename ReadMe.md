@@ -664,7 +664,7 @@ consoleLogResult(() => return greeting('Andrew'))
 Embedded in Unit 1.4 at https://lms.devmountain.com/courses/70
 
 # JavaScript 2 Afternoon Project
-https://github.com/DevMountain/javascript-2-afternoon
-https://github.com/DevMountain/javascript-2-afternoon-2
-https://github.com/DevMountain/javascript-2-afternoon-3
+* https://github.com/DevMountain/javascript-2-afternoon
+* https://github.com/DevMountain/javascript-2-afternoon-2
+* https://github.com/DevMountain/javascript-2-afternoon-3
 
