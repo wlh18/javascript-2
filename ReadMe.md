@@ -1,5 +1,5 @@
 ## Lecture Code
-https://repl.it/@matias_perez/JavaScript-2-Lecture-Code
+https://repl.it/@awestenskow/javascript-2-wlh18
 
 # Lesson Sections
 
